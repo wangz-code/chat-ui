@@ -47,7 +47,7 @@
 			</div>
 		</div>
 		<dl class="leading-4">
-			<dd class="text-sm">Reasoning</dd>
+			<dd class="text-sm">正在思考</dd>
 			<dt
 				class="flex items-center gap-1 truncate whitespace-nowrap text-[.82rem] text-gray-400"
 				class:animate-pulse={loading}

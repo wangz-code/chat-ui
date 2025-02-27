@@ -417,7 +417,7 @@
 						{:else}
 							<ChatInput
 								{assistant}
-								placeholder={isReadOnly ? "This conversation is read-only." : "Ask anything"}
+								placeholder={isReadOnly ? "This conversation is read-only." : "说点什么吧"}
 								{loading}
 								bind:value={message}
 								bind:files
@@ -495,8 +495,7 @@
 							</span>
 						{/if}
 					{/if}
-					<span class="max-sm:hidden">·</span><br class="sm:hidden" /> Generated content may be inaccurate
-					or false.
+					<span class="max-sm:hidden">·</span><br class="sm:hidden" /> 内容由AI生成，仅供参考
 				</p>
 				{#if messages.length}
 					<button
@@ -511,7 +510,7 @@
 							<div class="text-green-600 max-sm:hidden">Link copied to clipboard</div>
 						{:else}
 							<CarbonExport class="sm:text-primary-500 text-[.6rem] sm:mr-1.5" />
-							<div class="max-sm:hidden">Share this conversation</div>
+							<div class="max-sm:hidden">分享这个会话</div>
 						{/if}
 					</button>
 				{/if}
