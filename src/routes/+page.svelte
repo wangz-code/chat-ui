@@ -77,6 +77,9 @@
 		// check if there's a ?q query param with a message
 		const query = page.url.searchParams.get("q");
 		if (query) createConversation(query);
+
+		console.log("初始化入口 log==>", page.url.searchParams.get("token"));
+		console.log("初始化入口 log==>", page.url.searchParams.get("url"));
 	});
 
 	let currentModel = $derived(
