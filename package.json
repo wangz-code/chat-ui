@@ -4,7 +4,8 @@
 	"private": true,
 	"packageManager": "npm@9.5.0",
 	"scripts": {
-		"dev": "vite dev",
+		"pak": "zip -r chatui.zip build/*",
+		"dev": "vite dev --port 5888",
 		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",

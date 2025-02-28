@@ -210,32 +210,32 @@ export const handle: Handle = async ({ event, resolve }) => {
 	event.locals.sessionId = sessionId;
 
 	// CSRF protection
-	const requestContentType = event.request.headers.get("content-type")?.split(";")[0] ?? "";
+	// const requestContentType = event.request.headers.get("content-type")?.split(";")[0] ?? "";
 	/** https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form#attr-enctype */
-	const nativeFormContentTypes = [
-		"multipart/form-data",
-		"application/x-www-form-urlencoded",
-		"text/plain",
-	];
+	// const nativeFormContentTypes = [
+	// 	"multipart/form-data",
+	// 	"application/x-www-form-urlencoded",
+	// 	"text/plain",
+	// ];
 
-	if (event.request.method === "POST") {
-		if (nativeFormContentTypes.includes(requestContentType)) {
-			const origin = event.request.headers.get("origin");
+	// if (event.request.method === "POST") {
+	// 	if (nativeFormContentTypes.includes(requestContentType)) {
+	// 		const origin = event.request.headers.get("origin");
 
-			if (!origin) {
-				return errorResponse(403, "Non-JSON form requests need to have an origin");
-			}
+	// 		if (!origin) {
+	// 			return errorResponse(403, "Non-JSON form requests need to have an origin");
+	// 		}
 
-			const validOrigins = [
-				new URL(event.request.url).host,
-				...(envPublic.PUBLIC_ORIGIN ? [new URL(envPublic.PUBLIC_ORIGIN).host] : []),
-			];
+	// 		const validOrigins = [
+	// 			new URL(event.request.url).host,
+	// 			...(envPublic.PUBLIC_ORIGIN ? [new URL(envPublic.PUBLIC_ORIGIN).host] : []),
+	// 		];
 
-			if (!validOrigins.includes(new URL(origin).host)) {
-				return errorResponse(403, "Invalid referer for POST request");
-			}
-		}
-	}
+	// 		if (!validOrigins.includes(new URL(origin).host)) {
+	// 			return errorResponse(403, "Invalid referer for POST request");
+	// 		}
+	// 	}
+	// }
 
 	if (event.request.method === "POST") {
 		// if the request is a POST request we refresh the cookie

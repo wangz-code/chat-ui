@@ -128,7 +128,7 @@
 						<div
 							class="rounded-lg bg-black px-2 py-1.5 text-xs font-semibold leading-none text-white"
 						>
-							Active
+							当前模型
 						</div>
 					{/if}
 				</button>
@@ -173,7 +173,7 @@
 							<div
 								class="ml-auto rounded-lg bg-black px-2 py-1.5 text-xs font-semibold leading-none text-white"
 							>
-								Active
+								当前模型
 							</div>
 						{/if}
 					</button>
@@ -225,7 +225,7 @@
 								<div
 									class="ml-auto rounded-lg bg-black px-2 py-1.5 text-xs font-semibold leading-none text-white"
 								>
-									Active
+									当前模型
 								</div>
 							{/if}
 						</button>
@@ -283,7 +283,7 @@
 				aria-label="Configure application settings"
 			>
 				<UserIcon class="text-sm" />
-				Application Settings
+				应用配置
 			</button>
 		</div>
 	{/if}

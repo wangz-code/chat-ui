@@ -290,7 +290,7 @@
 							{#if isActive}
 								<span
 									class="mx-1.5 inline-flex items-center rounded-full bg-blue-600 px-2 py-0.5 text-xs font-semibold text-white"
-									>Active</span
+									>当前模型</span
 								>
 							{/if}
 						</span>

@@ -162,7 +162,7 @@
 	);
 
 	function onShare() {
-		if (!confirm("Are you sure you want to share this conversation? This cannot be undone.")) {
+		if (!confirm("您确定要分享此对话吗？此操作无法撤消。")) {
 			return;
 		}
 
@@ -413,7 +413,7 @@
 						class:paste-glow={pastedLongContent}
 					>
 						{#if lastIsError}
-							<ChatInput value="Sorry, something went wrong. Please try again." disabled={true} />
+							<ChatInput value="抱歉，出了点问题。请重试" disabled={true} />
 						{:else}
 							<ChatInput
 								{assistant}

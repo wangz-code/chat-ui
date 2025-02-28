@@ -95,14 +95,14 @@
 			</a>
 		{/if}
 
-		<CopyToClipBoardBtn
+		<!-- <CopyToClipBoardBtn
 			value="{envPublic.PUBLIC_ORIGIN || page.url.origin}{base}/models/{model.id}"
 			classNames="!border-none !shadow-none !py-0 !px-1 !rounded-md"
 		>
 			<div class="flex items-center gap-1.5 hover:underline">
 				<CarbonLink />Copy direct link to model
 			</div>
-		</CopyToClipBoardBtn>
+		</CopyToClipBoardBtn> -->
 	</div>
 
 	<button
@@ -117,12 +117,12 @@
 		}}
 	>
 		<CarbonChat class="mr-1.5 text-sm" />
-		New chat
+		新对话
 	</button>
 
 	<div class="relative flex w-full flex-col gap-2">
 		<div class="flex w-full flex-row content-between">
-			<h3 class="mb-1.5 text-lg font-semibold text-gray-800">System Prompt</h3>
+			<h3 class="mb-1.5 text-lg font-semibold text-gray-800">系统提示</h3>
 			{#if hasCustomPreprompt}
 				<button
 					class="ml-auto underline decoration-gray-300 hover:decoration-gray-700"

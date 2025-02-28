@@ -112,13 +112,13 @@
 							<span
 								class="rounded-full border border-blue-500 bg-blue-500/5 px-2 py-0.5 text-xs text-blue-500 dark:border-blue-500 dark:bg-blue-500/10"
 							>
-								Active
+								当前模型
 							</span>
 						{:else if index === 0}
 							<span
 								class="rounded-full border border-gray-300 px-2 py-0.5 text-xs text-gray-500 dark:border-gray-500 dark:text-gray-400"
 							>
-								Default
+								默认
 							</span>
 						{/if}
 					</div>
